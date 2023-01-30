@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import EmptyDeck from "../../component/empty-deck/EmptyDeck";
+import EmptyDeck from "../../components/empty-deck/EmptyDeck"
 import { FisherYatesShuffle } from "../../component/shuffle-algo/ShuffleAlgo"
 import CardInfo from "../../tarot-card-json";
 import { useDispatch } from "react-redux";
