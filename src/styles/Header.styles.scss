@@ -1,0 +1,42 @@
+.header-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  overflow: hidden;
+}
+
+.options-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .option {
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: #ffd700;
+    }
+  }
+
+  .page-option {
+    color: #e0e1dd;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: #ffd700;
+    }
+  
+  }
+
+
+
+}
