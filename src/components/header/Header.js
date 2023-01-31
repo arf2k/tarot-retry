@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Header.styles.scss";
-import { auth } from "../firebase/Firebase.utils";
+//import { auth } from "../firebase/Firebase.utils";
 // import { connect } from "react-redux"
 
 const Header = ({ currentUser }) => {
@@ -17,7 +17,7 @@ const Header = ({ currentUser }) => {
         <Link className="page-option" to="/readings">
           READINGS
         </Link>
-        {currentUser ? (
+        {/* {currentUser ? (
           <div className="option" onClick={() => auth.signOut()}>
             {" "}
             SIGN OUT{" "}
@@ -25,7 +25,7 @@ const Header = ({ currentUser }) => {
         ) : (
           <Link className="option" to="/signin">
             SIGN IN
-          </Link>
+          </Link> */}
         )}
       </div>
     </div>
