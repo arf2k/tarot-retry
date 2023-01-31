@@ -17,7 +17,12 @@ const Header = ({ currentUser }) => {
         <Link className="page-option" to="/readings">
           READINGS
         </Link>
-        {/* {currentUser ? (
+      </div>
+    </div>
+  );
+};
+
+  /* {currentUser ? (
           <div className="option" onClick={() => auth.signOut()}>
             {" "}
             SIGN OUT{" "}
@@ -25,13 +30,8 @@ const Header = ({ currentUser }) => {
         ) : (
           <Link className="option" to="/signin">
             SIGN IN
-          </Link> */}
-        )}
-      </div>
-    </div>
-  );
-};
-
+          </Link> */
+      
 
 // const mapStateToProps = (state) => {
 // console.log(state)

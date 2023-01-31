@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
     <h1>Alex's Tarot App</h1>
-    {/* <Header/> */}
+    {/* <Header/>  */}
     <Router>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
@@ -22,21 +22,3 @@ const App = () => {
 };
 
 export default App;
-// import AllCards from './pages/all-cards/AllCards';
-// import HomePage from './pages/homepage/Homepage';
-// //import SignIn from './components/sign-in/SignIn';
-// //import SignUp from './components/sign-up/SignUp';
-
-// const App = () => {
-//   return (
-//     <>
-// <h1>Alex's Tarot App</h1>
-//     <Routes>
-//         <Route path="/" element={<HomePage/>} />
-//         <Route path="/allcards" element={<AllCards/>} />
-//     </Routes>
-//   </>
-//   )
-// };
-
-// export default App;
