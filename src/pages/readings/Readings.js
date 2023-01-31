@@ -1,5 +1,5 @@
 import React from "react";
-import ShuffleShow from "../../component/shuffle-show/ShuffleShow";
+import ShuffleShow from "../../components/shuffle-show/ShuffleShow"
 import "../../styles/Readings.styles.scss"
 
 const Readings = () => {

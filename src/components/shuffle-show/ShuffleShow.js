@@ -5,12 +5,13 @@ import ShuffleThreeCards from "../shuffle-three-cards/ShuffleThreeCards";
 import "../../styles/ShuffleShow.styles.scss";
 import EmptyDeck from "../empty-deck/EmptyDeck";
 import { useDispatch } from "react-redux";
-import { shuffleThree } from "../../redux/shuffle/shuffleActions";
-import { withRouter } from "react-router-dom";
+import { shuffleThree } from "../../redux/Actions/shuffleCardsAction";
+import { useNavigate } from "react-router-dom";
 import MyButton from "../my-button/MyButton";
 
 const ShuffleShow = ({ history }) => {
   const [show, setShow] = useState(false);
+  const navigate = useNavigate()
 
   const dispatch = useDispatch();
 
@@ -28,7 +29,7 @@ const ShuffleShow = ({ history }) => {
           Shuffle Three
         </MyButton>
 
-        <MyButton id="one" onClick={() => history.push("/single")} isShuffle>
+        <MyButton id="one" onClick={() => navigate("/single")} isShuffle>
           Shuffle One
         </MyButton>
       </div>
@@ -42,4 +43,4 @@ const ShuffleShow = ({ history }) => {
   );
 };
 
-export default withRouter(ShuffleShow);
+export default (ShuffleShow);
